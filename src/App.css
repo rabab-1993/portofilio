@@ -1,0 +1,16 @@
+.App {
+  background: #fff0f0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 75vw;
+  height: 80vh;
+  /* margin: auto; */
+  background: #262a53;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

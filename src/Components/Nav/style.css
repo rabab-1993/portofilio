@@ -1,0 +1,14 @@
+.nav-bar {
+  width: 60%;
+  height: 10vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background: rgb(164, 187, 90); */
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #fff;
+}
