@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "Awraqi",
+        "desc": "a full stack web application, about plants",
+        "video": "video/awraqi.mov",
+        "image": "img/awraqi.png",
+        "technology": ["React,", "Redux,", "Material UI,", "Css,", "Nodejs,", "Express, ", "Cloudinary, ", "bcrypt, ", "jsonwebtoken, ", "MongoDB, ", "mongoose."],
+        "website": "https://awraqi.netlify.app/"
+
+    },
+    {
+        "id": "2",
+        "name": "Share It",
+        "desc": "a full stack web application social media app",
+        "video": "video/shareit.mov",
+        "image": "img/shareit.png",
+        "technology": ["React,", " Redux,", " Ant Design, ", "Css, ", "Nodejs, ", "Express, ", "Cloudinary, ", "bcrypt, ", "jsonwebtoken, ", "MongoDB, ", "mongoose."],
+        "website": "https://shareit0.netlify.app/"
+
+    },
+    {
+        "id": "3",
+        "name": "trip remaind",
+        "desc": "a full stack web application trip remaind app",
+        "video": "video/travel.mov",
+        "image": "img/travel.png",
+        "technology": ["React,", "Material UI,", "Css,", "Nodejs,", "Express,", "MongoDB, ", "mongoose."],
+        "website": "https://trip-reminde.netlify.app/"
+
+    }
+]

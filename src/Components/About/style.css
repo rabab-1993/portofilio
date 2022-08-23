@@ -1,0 +1,17 @@
+.about {
+  padding-top: 7rem;
+  color: #fca311;
+  font: italic bold 2em "Fira Sans", serif;
+  text-align: center;
+}
+
+.about h1 {
+  color: #fca311;
+  font-weight: bold;
+}
+
+.about p {
+  margin: auto;
+  /* background: rgb(201, 82, 82); */
+  width: 40rem;
+}
