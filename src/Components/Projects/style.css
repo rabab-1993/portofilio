@@ -84,6 +84,6 @@
 
 .slick-dots li {
   background: #fca311;
-  height: 20rem;
+  height: 0;
   border-radius: 50px;
 }
