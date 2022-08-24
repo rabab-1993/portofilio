@@ -8,7 +8,7 @@
   color: #9a8c98;
 }
 .content h3 {
-  color: #E5E5E5;
+  color: #e5e5e5;
 }
 
 .content span {
@@ -23,7 +23,6 @@
 .content a {
   color: #fca311;
   font-size: large;
-
 }
 
 .ant-image {
@@ -66,7 +65,6 @@
   background: #4a4e69;
 }
 
-
 .ant-modal {
   margin: 0;
   top: 0;
@@ -86,4 +84,43 @@
   background: #fca311;
   height: 0;
   border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ant-modal-content {
+    width: fit-content;
+  }
+  
+  .ant-modal {
+    left: 2%;
+    padding: 0;
+    top: 9%;
+  }
+
+  .content h1 {
+    color: #9a8c98;
+    width: fit-content;
+    font-size: large;
+    /* background: #000; */
+  }
+
+  .ant-image {
+    left: 15%;
+    height: 20vh;
+    width: 65vw;
+    
+  }
+
+  .preview {
+    height: 20vh;
+    width: 65vw;
+  }
+
+  .preview:hover {
+    opacity: 1;
+  }
+
+  .projects {
+    height: 43vh;
+  }
 }

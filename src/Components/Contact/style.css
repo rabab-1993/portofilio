@@ -22,3 +22,13 @@
   margin-top: 60px;
   color: #fca311;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .contact p {
+    width: fit-content;
+    height: 20vh;
+    font-size: 0.5em;
+  }
+
+}
