@@ -3,7 +3,7 @@
         "id": "1",
         "name": "Awraqi",
         "desc": "a full stack web application, about plants",
-        "video": "video/awraqi.mov",
+        "video": "https://res.cloudinary.com/dtj6j4tpa/video/upload/v1661353508/project-video/awraqi_l775ps.mov",
         "image": "img/awraqi.png",
         "technology": ["React,", "Redux,", "Material UI,", "Css,", "Nodejs,", "Express, ", "Cloudinary, ", "bcrypt, ", "jsonwebtoken, ", "MongoDB, ", "mongoose."],
         "website": "https://awraqi.netlify.app/"
@@ -13,7 +13,7 @@
         "id": "2",
         "name": "Share It",
         "desc": "a full stack web application social media app",
-        "video": "video/shareit.mov",
+        "video": "https://res.cloudinary.com/dtj6j4tpa/video/upload/v1661353499/project-video/shareit_jrzlfh.mov",
         "image": "img/shareit.png",
         "technology": ["React,", " Redux,", " Ant Design, ", "Css, ", "Nodejs, ", "Express, ", "Cloudinary, ", "bcrypt, ", "jsonwebtoken, ", "MongoDB, ", "mongoose."],
         "website": "https://shareit0.netlify.app/"
@@ -23,7 +23,7 @@
         "id": "3",
         "name": "trip remaind",
         "desc": "a full stack web application trip remaind app",
-        "video": "video/travel.mov",
+        "video": "https://res.cloudinary.com/dtj6j4tpa/video/upload/v1661353533/project-video/travel_jtqpxi.mov",
         "image": "img/travel.png",
         "technology": ["React,", "Material UI,", "Css,", "Nodejs,", "Express,", "MongoDB, ", "mongoose."],
         "website": "https://trip-reminde.netlify.app/"
