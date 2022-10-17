@@ -1,31 +1,78 @@
 .about {
-  padding-top: 7rem;
-  color: #fca311;
-  font: italic bold 2em "Fira Sans", serif;
-  text-align: center;
-}
-
-.about h1 {
-  color: #fca311;
-  font-weight: bold;
+  width: 100vw;
+  padding-top: 10rem;
+  font: italic bold 2em none;
+  display: flex;
+  justify-content: center;
 }
 
 .about p {
-  margin: auto;
-  width: 40rem;
+  -webkit-animation: p 0.5s linear both;
+  animation: p 0.5s linear both;
+  overflow: hidden;
+  width: 50rem;
   word-wrap: break-word;
+  color: #002e5f;
+}
+
+.about b {
+  color: transparent;
+  font-family: "Fira Sans", serif;
+  background-image: linear-gradient(to right, #003566, #ffc300, #ffd60a);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* * ----------------------------------------
+ * animation slide-left
+ * ---------------------------------------- */
+
+@-webkit-keyframes p {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+}
+
+@keyframes p {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .about {
-    padding-top: 1rem;
     height: 80vh;
+    /* width: fit-content; */
+    /* background: rgb(201, 82, 82); */
+
   }
   .about p {
-    margin: 0;
-    width: fit-content;
-    padding: 1rem;
+    /* margin: 0; */
+    width: 90vw;
+    word-wrap: break-word;
+    /* padding: 1rem; */
     /* background: rgb(201, 82, 82); */
+
   }
 
+  @keyframes p {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(60px);
+      transform: translateX(12px);
+    }
+  }
 }

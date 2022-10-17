@@ -1,34 +1,43 @@
-import React from "react";
-// import { Link } from "react-router-dom";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-// import { IoDocumentTextSharp } from "react-icons/io5";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { message } from "antd";
 import "./style.css";
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ilsp35e",
+        "template_h05nd1s",
+        form.current,
+        "vpyQVV0ZFmKQ_E58Y"
+      )
+      .then(
+        (result) => {
+          // console.log(result);
+          message.success("Message has been sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="contact">
-      <p>
-        You can contact me via
-        <a href="https://www.linkedin.com/in/rabab-yousef/" target={"_blank"}>
-          <FaLinkedin className="icon" />
-        </a>
-        , or visit my Github page
-        <a
-          href="https://github.com/rabab-1993"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub className="icon" />
-        </a>.
-        {/* , or view my resume from here
-        <a
-          href="https://rababyousef.herokuapp.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <IoDocumentTextSharp className="icon" />
-        </a> */}
-      </p>
+      <form ref={form} onSubmit={sendEmail}>
+        <h2>Send me a massege!</h2>
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+      </form>
     </div>
   );
 };

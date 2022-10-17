@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Modal } from "antd";
 import Slider from "react-slick";
 import { AiOutlineEye } from "react-icons/ai";
@@ -6,7 +6,7 @@ import data from "./data.json";
 import "./style.css";
 
 const Projects = () => {
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
   const settings = {
     dots: true,
     fade: true,
@@ -26,25 +26,23 @@ const Projects = () => {
             <source src={project.video} type="video/mp4" />
           </video>
           <h1>{project.desc}</h1>
-         
-          <h3> <span>technology that used:</span> {project.technology}</h3>
+
+          <h3>
+            {" "}
+            <span>technology that used:</span> {project.technology}
+          </h3>
           <a href={project.website} target="_blank" rel="noopener noreferrer">
             Visit Demo
           </a>
         </div>
       ),
-
-      
-        top: 20,
-    
-      visible: visible,
-
       onOk() {},
     });
   };
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
+      <h1>Projects</h1>
       <Slider {...settings}>
         {data.map((project) => {
           return (
@@ -55,7 +53,7 @@ const Projects = () => {
                 className="preview"
                 onClick={() => {
                   info(project);
-                  setVisible(true);
+                  // setVisible(true);
                 }}
               >
                 <AiOutlineEye fontSize="20" />

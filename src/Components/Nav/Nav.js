@@ -1,45 +1,68 @@
 import React, { useState } from "react";
 import { Menu } from "antd";
-import { Link } from "react-router-dom";
-// import'antd/dist/antd.less';
-import "antd/dist/antd.css";
+import { FaTimes } from "react-icons/fa";
+import Contact from "../Contact/Contact";
 import "./style.css";
-const Nav = () => {
-  const items = [
-    {
-      label: <Link to={"/"}>About Me</Link>,
-      key: "about",
-    },
-    {
-      label: <Link to={"/projects"}>Projects</Link>,
-      key: "projects",
-    },
-    {
-      label: <Link to={"/contact"}>Contact Me</Link>,
-      key: "contact",
-    },
-  ];
 
-  const [current, setCurrent] = useState("about");
+const Nav = () => {
+  const [current, setCurrent] = useState("");
+  const [contactForm, setContactForm] = useState(false);
 
   const onClick = (e) => {
     setCurrent(e.key);
   };
+
+  // const scrollTo = () => scroll.current.scrollIntoView({ behavior: "smooth" });
+  const items = [
+    {
+      label: <a href="#about-me">About Me</a>,
+      key: "about",
+    },
+    {
+      label: (
+        <a href="#projects">
+          Projects
+        </a>
+      ),
+      key: "projects",
+    },
+    {
+      label: (
+        <a href="#skills">
+          Skills
+        </a>
+      ),
+      key: "skills",
+    },
+    {
+      label: <h4 onClick={() => setContactForm(true)}>Contact Me</h4>,
+      key: "contact",
+    },
+  ];
+
   return (
-    
     <>
-      {/* <div style={{ flex: "0 0 50px", height: 20}} /> */}
-        <Menu
-          // style={{ flex: "auto", minWidth: 0, }}
-          className="nav-bar"
-          onClick={onClick}
-          selectedKeys={[current]}
-          mode="horizontal"
-          items={items}
+      <Menu
+        // style={{ flex: "auto", minWidth: 0, }}
+        className="nav-bar"
+        onClick={onClick}
+        selectedKeys={[current]}
+        mode="horizontal"
+        items={items}
+      />
+      {contactForm ? (
+        <>
+          <FaTimes
+            className="close-bttn"
+            onClick={() => setContactForm(false)}
           />
-      {/* <div style={{ flex: "0 0 50px", height: 20}} /> */}
-          </>
-  )
+          <Contact />
+        </>
+      ) : (
+        <></>
+      )}
+    </>
+  );
 };
 
 export default Nav;

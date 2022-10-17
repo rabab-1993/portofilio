@@ -1,23 +1,28 @@
 .projects {
   /* background: rgb(221, 67, 67); */
-  padding-top: 1rem;
   position: relative;
+  width: 100vw;
+  height: 70vh;
+  text-align: center;
+  padding-top: 10rem;
+  color: #003566;
 }
 
 .content h1 {
-  color: #9a8c98;
+  color: #ffc300;
 }
+
 .content h3 {
   color: #e5e5e5;
 }
 
 .content span {
-  color: #c9ada7;
+  color: #ffc300;
   font-weight: bold;
 }
 
 .title {
-  color: #f2e9e4;
+  color: #ffd60a;
 }
 
 .content a {
@@ -26,7 +31,7 @@
 }
 
 .ant-image {
-  left: 15%;
+  left: 25%;
   height: 50vh;
   width: 54vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -41,7 +46,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  left: 15%;
+  left: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,21 +63,24 @@
   opacity: 1;
 }
 
-.ant-modal-content {
+.ant-modal .ant-modal-content {
   width: 45vw;
   text-align: center;
+  background-image: linear-gradient(to right bottom, #003566, #001d3d);
   border-radius: 7%;
-  background: #4a4e69;
+  top: 0%;
+  left: -20%;
+  /* bottom: -30%; */
 }
 
-.ant-modal {
+/* .ant-modal {
   margin: 0;
-  top: 0;
-  left: 27%;
-  bottom: 30%;
-}
+  top: -0%;
+  left: -6%;
+  bottom: -30%;
+} */
 
-.anticon svg {
+.ant-modal .anticon svg {
   display: none;
 }
 
@@ -80,19 +88,22 @@
   width: 100%;
 }
 
+
 .slick-dots li {
-  background: #fca311;
+  background: #ffc300;
   height: 0;
   border-radius: 50px;
+  left: 3%;
+
 }
 
 @media only screen and (max-width: 600px) {
-  .ant-modal-content {
+  .ant-modal .ant-modal-content {
     width: fit-content;
   }
-  
+
   .ant-modal {
-    left: 2%;
+    left: 10%;
     padding: 0;
     top: 9%;
   }
@@ -105,15 +116,14 @@
   }
 
   .ant-image {
-    left: 15%;
+    left: 10%;
     height: 20vh;
-    width: 65vw;
-    
+    width: 80vw;
   }
 
   .preview {
     height: 20vh;
-    width: 65vw;
+    width: 70vw;
   }
 
   .preview:hover {
