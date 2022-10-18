@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaTwitter, FaTimes } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
+import { SiFreelancer } from "react-icons/si";
 import Contact from "../Contact/Contact";
 import Programmer from "./programmer.png";
 import "./style.css";
@@ -34,6 +35,13 @@ const Profile = () => {
           rel="noopener noreferrer"
         >
           <FaGithub />
+        </a>
+        <a
+          href="https://www.freelancer.com/u/rababyousef1414"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiFreelancer />
         </a>
         <a
           href="https://rabab-1993.github.io/CV/"

@@ -1,8 +1,7 @@
 import React from "react";
 import "./style.css";
-
+import p from "./pp.jpg";
 const About = () => {
- 
   return (
     <div className="about" id="about-me">
       <p>
@@ -10,6 +9,7 @@ const About = () => {
         passionate and a quick leaner and a Hard-working programmer with a flair
         for creating elegant solutions. Looking to use my programming skills
       </p>
+      <img src={p} alt="" />
     </div>
   );
 };

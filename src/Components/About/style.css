@@ -1,9 +1,19 @@
 .about {
   width: 100vw;
-  padding-top: 10rem;
+  height: 70vh;
+  /* background: #000; */
+  margin: 8rem 0;
   font: italic bold 2em none;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about img {
+  width: 26rem;
+  height: 22rem;
+  border-radius: 50rem;
+  border: 3px dotted #003566;
 }
 
 .about p {
@@ -51,10 +61,16 @@
 
 @media only screen and (max-width: 600px) {
   .about {
-    height: 80vh;
-    /* width: fit-content; */
+    flex-direction: column-reverse;
+    height: fit-content;
+    width: fit-content;
     /* background: rgb(201, 82, 82); */
+  }
 
+  .about img {
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 20rem;
   }
   .about p {
     /* margin: 0; */
@@ -62,7 +78,6 @@
     word-wrap: break-word;
     /* padding: 1rem; */
     /* background: rgb(201, 82, 82); */
-
   }
 
   @keyframes p {
