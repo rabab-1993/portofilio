@@ -12,26 +12,21 @@ const Nav = () => {
     setCurrent(e.key);
   };
 
-  // const scrollTo = () => scroll.current.scrollIntoView({ behavior: "smooth" });
   const items = [
+    {
+      label: <button onClick={() => window.scrollTo({ top: 0 })}>Home</button>,
+      key: "home",
+    },
     {
       label: <a href="#about-me">About Me</a>,
       key: "about",
     },
     {
-      label: (
-        <a href="#projects">
-          Projects
-        </a>
-      ),
+      label: <a href="#projects">Projects</a>,
       key: "projects",
     },
     {
-      label: (
-        <a href="#skills">
-          Skills
-        </a>
-      ),
+      label: <a href="#skills">Skills</a>,
       key: "skills",
     },
     {
