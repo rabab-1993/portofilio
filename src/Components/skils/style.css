@@ -1,14 +1,14 @@
 .skills {
   text-align: center;
   /* background: #000; */
-  margin-top: 17rem;
-  height: 60vh;
+  margin-top: 20rem;
+  height: 100vh;
   font-weight: bolder;
   font-size: 1rem;
 }
 
 .icons {
-  padding-top: 3rem;
+  padding: 3rem 1rem;
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
@@ -19,13 +19,19 @@
 .icons i {
   width: 20rem;
   font-weight: normal;
+  padding-bottom: 0.3rem;
+  /* background: rgb(239, 213, 213); */
 }
 
 .icons .antd {
-  /* color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(to right, darkblue, darkred); */
-  /* border: solid #001d3d; */
-  fill:  #004e98;
-  
+  fill: #004e98;
+}
+
+@media only screen and (max-width: 600px) {
+  .icons {
+    width: 100vw;
+   
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
 }

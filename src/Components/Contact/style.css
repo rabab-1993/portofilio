@@ -35,12 +35,38 @@
   color: #fff;
 }
 
+.button {
+  margin-top: 1rem;
+  border-radius: 5px;
+  background: #ffc300;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
 
 @media only screen and (max-width: 600px) {
+  .contact h2 {
+font-size: 1em;
+  }
   .contact p {
     width: fit-content;
     height: 20vh;
     font-size: 0.5em;
+  }
+
+  .contact form {
+    width: 90vw;
+    left: 5%;
+  }
+
+  input, textarea {
+    width: 80vw;
+    height: 3rem;
+  }
+
+  .button {
+    width: fit-content;
   }
 
 }

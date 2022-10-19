@@ -6,6 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
     /* background: #000; */
+    border-top: 3px dotted #003566;
   }
   
   .footer a {

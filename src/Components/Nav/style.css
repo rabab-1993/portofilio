@@ -20,6 +20,7 @@
   border: none;
   background: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .ant-menu-horizontal .ant-menu-item-selected a {
@@ -45,7 +46,7 @@
     /* background-color: #4a4e69; */
     font-size: large;
     /* content: '  \2026'; */
-    content: " \2261";
+    /* content: " \2261"; */
     /* content: ' \205D'; */
     color: #000;
   }
