@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaTwitter, FaTimes } from "react-icons/fa";
-import { IoDocumentText } from "react-icons/io5";
 import { SiFreelancer } from "react-icons/si";
 import Contact from "../Contact/Contact";
 import Programmer from "./programmer.png";
@@ -43,14 +42,6 @@ const Profile = () => {
         >
           <SiFreelancer />
         </a>
-        <a
-          href="https://rabab-1993.github.io/CV/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <IoDocumentText />
-        </a>
-
         <button onClick={() => setContactForm(true)} className="bttn">
           Hire Me!
         </button>

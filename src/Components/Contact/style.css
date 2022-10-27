@@ -1,7 +1,6 @@
 .contact {
   padding: 4rem;
   font-size: 2rem;
-  color: #9a8c98;
   background: rgba(96, 95, 95, 0.502);
   height: 100vh;
   width: 100vw;
@@ -13,30 +12,49 @@
   overflow: auto;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: auto;
+  width: 70vw;
+  margin: auto;
+}
+
+.contact-tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2% 0 0 2%;
+  color: #003566;
+  padding: 1rem;
+  background-image: linear-gradient(to right bottom, #ffc300, #ffd60a);
+}
+
 .contact form {
   background-image: linear-gradient(to right bottom, #003566, #001d3d);
-  border-radius: 2%;
+  color: #9a8c98;
+  border-radius: 0 2% 2% 0;
+  /* border-radius: 2%;
    position: fixed;
    z-index: 1;
-   /* padding-top: 100px; */
    left: 27%;
-   top: 5%;
-   width: 50vw;
-   height: 90vh;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   overflow: auto;
-   display: flex;
-   flex-direction: column;
+   top: 5%; */
+  /* width: 40vw; */
+  /* height: 90vh; */
+  /* overflow: auto; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact form h2 {
+.contact form h2,
+.contact-tools h3 {
   color: #fff;
 }
 
 .button {
-  margin-top: 1rem;
+  margin: 0.6rem 0;
   border-radius: 5px;
   background: #ffc300;
   color: #fff;
@@ -44,11 +62,39 @@
   cursor: pointer;
 }
 
+.close-bttn {
+  font-size: 2rem;
+  position: fixed;
+  z-index: 4;
+  color: #ffc300;
+  left: 83%;
+  top: 15%;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
-  .contact h2 {
-font-size: 1em;
+  .grid {
+    display: block;
+    width: fit-content;
+    position: absolute;
+    right: 3%;
+    bottom: 8%;
   }
+
+  .contact-tools {
+    font-size: medium;
+  }
+
+  .close-bttn {
+    color: #003566;
+    top: 10%;
+    left: 87%;
+    /* right: -2%; */
+  }
+  .contact h2 {
+    font-size: 1em;
+  }
+
   .contact p {
     width: fit-content;
     height: 20vh;
@@ -57,10 +103,11 @@ font-size: 1em;
 
   .contact form {
     width: 90vw;
-    left: 5%;
+    /* left: 5%; */
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 80vw;
     height: 3rem;
   }
@@ -68,5 +115,4 @@ font-size: 1em;
   .button {
     width: fit-content;
   }
-
 }

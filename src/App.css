@@ -37,15 +37,15 @@
   opacity: 1;
 }
 
-.close-bttn {
+/* .close-bttn {
   font-size: 2rem;
   position: fixed;
   z-index: 4;
   color: #ffc300;
-  left: 73%;
-  top: 6%;
+  left: 93%;
+  top: 15%;
   cursor: pointer;
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .slick-next {
