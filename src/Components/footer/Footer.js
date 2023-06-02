@@ -1,18 +1,18 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-import { SiFreelancer } from "react-icons/si";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+// import { SiFreelancer } from "react-icons/si";
 import "./style.css";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <a
+      {/* <a
         href="https://twitter.com/Rabab_1419"
         target={"_blank"}
         rel="noopener noreferrer"
       >
         <FaTwitter />
-      </a>
+      </a> */}
       <a
         href="https://www.linkedin.com/in/rabab-yousef/"
         target={"_blank"}
@@ -27,13 +27,13 @@ const Footer = () => {
       >
         <FaGithub />
       </a>
-      <a
+      {/* <a
         href="https://www.freelancer.com/u/rababyousef1414"
         target="_blank"
         rel="noopener noreferrer"
       >
         <SiFreelancer />
-      </a>
+      </a> */}
     </div>
   );
 };

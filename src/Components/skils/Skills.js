@@ -12,6 +12,7 @@ import {
   SiAntdesign,
   SiGit,
   SiGithub,
+  SiDjango
 } from "react-icons/si";
 
 import "./style.css";
@@ -31,7 +32,7 @@ const Skills = () => {
           <SiJavascript color="#FFD60A" /> Javascript
         </i>
         <i>
-          <SiHtml5 color="#ff5400" /> Html5
+          <SiHtml5 color="#ff5400" /> HTML5
         </i>
         <i>
           <SiCss3 color="#00bbf9" /> CSS
@@ -40,7 +41,7 @@ const Skills = () => {
           <SiNodedotjs color="#6a994e" /> NodeJs
         </i>
         <i>
-          <SiMongodb color="#008000" /> Mongodb
+          <SiMongodb color="#008000" /> MongoDB
         </i>
         <i>
           <SiExpress /> ExpressJs
@@ -57,6 +58,10 @@ const Skills = () => {
         </i>
         <i>
           <SiGithub /> Github
+        </i>
+        <i>
+          <SiDjango /> Django
+          <h6 color="#8a929a">(currently learning)</h6>
         </i>
       </div>
     </div>

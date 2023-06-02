@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaLinkedin, FaGithub, FaTwitter, FaTimes } from "react-icons/fa";
-import { SiFreelancer } from "react-icons/si";
+import { FaLinkedin, FaGithub, FaTimes } from "react-icons/fa";
+// import { SiFreelancer } from "react-icons/si";
 import Contact from "../Contact/Contact";
 import Programmer from "./programmer.png";
 import "./style.css";
@@ -14,13 +14,13 @@ const Profile = () => {
       <h1>Hi! I'm Rabab Yousef</h1>
       <h2>Full-Stack Web Developer</h2>
       <div className="linkes">
-        <a
+        {/* <a
           href="https://twitter.com/Rabab_1419"
           target={"_blank"}
           rel="noopener noreferrer"
         >
           <FaTwitter />
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/in/rabab-yousef/"
           target={"_blank"}
@@ -35,13 +35,13 @@ const Profile = () => {
         >
           <FaGithub />
         </a>
-        <a
+        {/* <a
           href="https://www.freelancer.com/u/rababyousef1414"
           target="_blank"
           rel="noopener noreferrer"
         >
           <SiFreelancer />
-        </a>
+        </a> */}
         <button onClick={() => setContactForm(true)} className="bttn">
           Hire Me!
         </button>

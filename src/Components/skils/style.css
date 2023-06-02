@@ -19,7 +19,9 @@
 .icons i {
   width: 20rem;
   font-weight: normal;
-  padding-bottom: 0.3rem;
+  padding: 0.7rem 0 ;
+  /* padding-top: 0.7rem;
+  padding-bottom: 0.7rem; */
   /* background: rgb(239, 213, 213); */
 }
 
